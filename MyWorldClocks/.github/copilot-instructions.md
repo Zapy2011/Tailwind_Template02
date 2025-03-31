@@ -1,0 +1,2 @@
+- use Qwik Framework as my language of choice
+- use Tailwind css for styling

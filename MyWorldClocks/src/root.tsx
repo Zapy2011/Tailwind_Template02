@@ -6,6 +6,7 @@ import {
 } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
 import { isDev } from "@builder.io/qwik";
+import { Navbar } from "./components/navbar";
 
 import "./global.css";
 
@@ -27,9 +28,11 @@ export default component$(() => {
             href={`${import.meta.env.BASE_URL}manifest.json`}
           />
         )}
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet" />
         <RouterHead />
       </head>
-      <body lang="en">
+      <body class="font-[Poppins] bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen" lang="en">
+        <Navbar />
         <RouterOutlet />
         {!isDev && <ServiceWorkerRegister />}
       </body>
