@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+.clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.clock {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #fff;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+  will-change: transform;
+}
+
+.clock label {
+  position: absolute;
+  inset: 20px;
+  text-align: center;
+}
+
+.clock label span {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  color: #18191a;
+}
+
+.indicator {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.indicator::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: #18191a;
+  border: 4px solid #e74c3c;
+}
+
+.hand {
+  position: absolute;
+  bottom: 0;
+  border-radius: 25px;
+  transform-origin: bottom;
+  will-change: transform;
+}
+
+.hand.second {
+  height: 130px;
+  width: 4px;
+  background: #e74c3c;
+}
+
+.hand.minute {
+  height: 120px;
+  width: 5px;
+  background: #18191a;
+}
+
+.hand.hour {
+  height: 100px;
+  width: 8px;
+  background: #18191a;
+}
+
+.dark .clock { background: #18191a; }
+.dark .clock label span { color: #fff; }
+.dark .indicator::before { background: #fff; }
+.dark .hand.minute,
+.dark .hand.hour { background: #fff; }
