@@ -27,7 +27,6 @@ export default component$(() => {
         </ul>
       </div>
       <div class="flex items-center gap-6">
-        <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Sign in</button>
         <ion-icon onClick$={() => onToggleMenu()} name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
       </div>
     </nav>
