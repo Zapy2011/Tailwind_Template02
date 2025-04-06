@@ -1,17 +1,50 @@
 import { component$, Slot } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
+import { onToggleMenu } from "~/components/menu";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
-  // Control caching for this request for best performance and to reduce hosting costs:
-  // https://qwik.dev/docs/caching/
   cacheControl({
-    // Always serve a cached response by default, up to a week stale
     staleWhileRevalidate: 60 * 60 * 24 * 7,
-    // Max once every 5 seconds, revalidate on the server to get a fresh version of this page
     maxAge: 5,
   });
 };
 
 export default component$(() => {
-  return <Slot />;
+  return (
+    <div class="font-[Poppins] bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] min-h-screen">
+      <header class="bg-white">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
+          <div>
+            <img class="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="logo" />
+          </div>
+          <div class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+            <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+              <li>
+                <a class="hover:text-gray-500" href="#">Products</a>
+              </li>
+              <li>
+                <a class="hover:text-gray-500" href="#">Solution</a>
+              </li>
+              <li>
+                <a class="hover:text-gray-500" href="#">Resource</a>
+              </li>
+              <li>
+                <a class="hover:text-gray-500" href="#">Developers</a>
+              </li>
+              <li>
+                <a class="hover:text-gray-500" href="#">Pricing</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex items-center gap-6">
+            <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Sign in</button>
+            <ion-icon onClick$={() => onToggleMenu()} name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <Slot />
+      </main>
+    </div>
+  );
 });
