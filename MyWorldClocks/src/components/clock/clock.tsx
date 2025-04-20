@@ -4,6 +4,9 @@ import './clock.css';
 export interface ClockProps {
   id: string;
   city: string;
+  country: string;
+  state: string;
+  continent: string;
   utcOffset: number;
 }
 
@@ -14,6 +17,7 @@ export const Clock = component$<ClockProps>(({ id, city, utcOffset }) => {
   const containerRef = useSignal<Element>();
   const rafId = useSignal<number>(0);
 
+  // eslint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(({ cleanup }) => {
     let lastFrameTime = performance.now();
     const FPS = 60;

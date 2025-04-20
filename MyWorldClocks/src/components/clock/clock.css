@@ -52,7 +52,7 @@
 
 .hand {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   border-radius: 25px;
   transform-origin: bottom;
   will-change: transform;
