@@ -1,0 +1,8 @@
+[
+  { "id": "minnesota", "city": "Minnesota", "country": "USA", "state": "Minnesota", "continent": "North America", "utcOffset": -5 },
+  { "id": "chicago", "city": "Chicago", "country": "USA", "state": "Illinois", "continent": "North America", "utcOffset": -6 },
+  { "id": "beijing", "city": "Beijing", "country": "China", "state": "Beijing", "continent": "Asia", "utcOffset": 8 },
+  { "id": "taipei", "city": "Taipei", "country": "Taiwan", "state": "Taipei City", "continent": "Asia", "utcOffset": 8 },
+  { "id": "newyork", "city": "New York", "country": "USA", "state": "New York", "continent": "North America", "utcOffset": -5 },
+  { "id": "phnompenh", "city": "Phnom Penh", "country": "Cambodia", "state": "Phnom Penh", "continent": "Asia", "utcOffset": 7 }
+]
