@@ -1,8 +1,30 @@
+ 
+
 [
-  { "id": "minnesota", "city": "Minnesota", "country": "USA", "state": "Minnesota", "continent": "North America", "utcOffset": -5 },
-  { "id": "chicago", "city": "Chicago", "country": "USA", "state": "Illinois", "continent": "North America", "utcOffset": -6 },
-  { "id": "beijing", "city": "Beijing", "country": "China", "state": "Beijing", "continent": "Asia", "utcOffset": 8 },
-  { "id": "taipei", "city": "Taipei", "country": "Taiwan", "state": "Taipei City", "continent": "Asia", "utcOffset": 8 },
-  { "id": "newyork", "city": "New York", "country": "USA", "state": "New York", "continent": "North America", "utcOffset": -5 },
-  { "id": "phnompenh", "city": "Phnom Penh", "country": "Cambodia", "state": "Phnom Penh", "continent": "Asia", "utcOffset": 7 }
+  { "id": "new_york_city", "city": "New York City", "country": "USA", "state": "New York", "continent": "North America", "utcOffset": -4 },
+  { "id": "philadelphia", "city": "Philadelphia", "country": "USA", "state": "Pennsylvania", "continent": "North America", "utcOffset": -4 },
+  { "id": "boston", "city": "Boston", "country": "USA", "state": "Massachusetts", "continent": "North America", "utcOffset": -4 },
+  { "id": "washington_dc", "city": "Washington, D.C.", "country": "USA", "state": "District of Columbia", "continent": "North America", "utcOffset": -4 },
+  { "id": "baltimore", "city": "Baltimore", "country": "USA", "state": "Maryland", "continent": "North America", "utcOffset": -4 },
+  { "id": "atlanta", "city": "Atlanta", "country": "USA", "state": "Georgia", "continent": "North America", "utcOffset": -4 },
+  { "id": "miami", "city": "Miami", "country": "USA", "state": "Florida", "continent": "North America", "utcOffset": -4 },
+  { "id": "charlotte", "city": "Charlotte", "country": "USA", "state": "North Carolina", "continent": "North America", "utcOffset": -4 },
+  { "id": "chicago", "city": "Chicago", "country": "USA", "state": "Illinois", "continent": "North America", "utcOffset": -5 },
+  { "id": "houston", "city": "Houston", "country": "USA", "state": "Texas", "continent": "North America", "utcOffset": -5 },
+  { "id": "dallas", "city": "Dallas", "country": "USA", "state": "Texas", "continent": "North America", "utcOffset": -5 },
+  { "id": "austin", "city": "Austin", "country": "USA", "state": "Texas", "continent": "North America", "utcOffset": -5 },
+  { "id": "san_antonio", "city": "San Antonio", "country": "USA", "state": "Texas", "continent": "North America", "utcOffset": -5 },
+  { "id": "new_orleans", "city": "New Orleans", "country": "USA", "state": "Louisiana", "continent": "North America", "utcOffset": -5 },
+  { "id": "nashville", "city": "Nashville", "country": "USA", "state": "Tennessee", "continent": "North America", "utcOffset": -5 },
+  { "id": "minneapolis", "city": "Minneapolis", "country": "USA", "state": "Minnesota", "continent": "North America", "utcOffset": -5 },
+  { "id": "indianapolis", "city": "Indianapolis", "country": "USA", "state": "Indiana", "continent": "North America", "utcOffset": -5 },
+  { "id": "denver", "city": "Denver", "country": "USA", "state": "Colorado", "continent": "North America", "utcOffset": -6 },
+  { "id": "phoenix", "city": "Phoenix", "country": "USA", "state": "Arizona", "continent": "North America", "utcOffset": -7 },
+  { "id": "salt_lake_city", "city": "Salt Lake City", "country": "USA", "state": "Utah", "continent": "North America", "utcOffset": -6 },
+  { "id": "los_angeles", "city": "Los Angeles", "country": "USA", "state": "California", "continent": "North America", "utcOffset": -7 },
+  { "id": "san_francisco", "city": "San Francisco", "country": "USA", "state": "California", "continent": "North America", "utcOffset": -7 },
+  { "id": "san_diego", "city": "San Diego", "country": "USA", "state": "California", "continent": "North America", "utcOffset": -7 },
+  { "id": "seattle", "city": "Seattle", "country": "USA", "state": "Washington", "continent": "North America", "utcOffset": -7 },
+  { "id": "portland", "city": "Portland", "country": "USA", "state": "Oregon", "continent": "North America", "utcOffset": -7 },
+  { "id": "las_vegas", "city": "Las Vegas", "country": "USA", "state": "Nevada", "continent": "North America", "utcOffset": -7 }
 ]

@@ -1,16 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Clock } from "~/components/clock/clock";
+import clocksData from '~/data/clocks.json';
+import { ClockData } from '~/model/clock-data';
 
 export default component$(() => {
-  const clocks = [
-    { id: "minnesota", city: "Minnesota", utcOffset: -5 },
-    { id: "chicago", city: "Chicago", utcOffset: -6 },
-    { id: "beijing", city: "Beijing", utcOffset: 8 },
-    { id: "taipei", city: "Taipei", utcOffset: 8 },
-    { id: "newyork", city: "New York", utcOffset: -5 },
-    { id: "phnompenh", city: "Phnom Penh", utcOffset: 7 },
-  ];
+  const clocks = clocksData.map(clock => new ClockData(clock));
 
   return (
     <div class="container mx-auto py-8">
