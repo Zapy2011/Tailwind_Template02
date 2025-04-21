@@ -17,7 +17,7 @@ const defaultContinents = [
   "Antarctica"
 ];
 
-export default component$<NavbarProps>(({ selectedContinent, onSelectContinent }) => {
+export default component$<NavbarProps>(({ selectedContinent = "North America", onSelectContinent }) => {
   const continents = defaultContinents;
   return (
     <nav class="flex justify-between items-center w-[92%] mx-auto">
