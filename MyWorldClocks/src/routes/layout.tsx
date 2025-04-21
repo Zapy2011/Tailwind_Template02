@@ -1,6 +1,6 @@
 import { component$, Slot } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
-import NavBar from "~/components/navbar/navbar";
+// import NavBar from "~/components/navbar/navbar";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   cacheControl({
@@ -13,7 +13,7 @@ export default component$(() => {
   return (
     <div class="font-[Poppins] bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] min-h-screen">
       <header class="bg-white">
-        <NavBar />
+        {/* NavBar removed: use it only in index.tsx with props */}
       </header>
       <main>
         <Slot />

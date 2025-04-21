@@ -21,7 +21,7 @@ export const Clock = component$<ClockProps>(({ id, city, utcOffset }) => {
   useVisibleTask$(({ cleanup }) => {
     let lastFrameTime = performance.now();
     const FPS = 60;
-    const frameInterval = 1000 / FPS;
+    const frameInterval = 70000 / FPS;
 
     const updateTime = (currentTime: number) => {
       rafId.value = requestAnimationFrame(updateTime);
@@ -33,6 +33,7 @@ export const Clock = component$<ClockProps>(({ id, city, utcOffset }) => {
       lastFrameTime = currentTime;
 
       const now = new Date();
+      console.log('id = ' + id + ' utcOffset = ' + utcOffset);
       const utcTime = new Date(now.getTime() + utcOffset * 60 * 60 * 1000);
 
       const seconds = utcTime.getUTCSeconds();

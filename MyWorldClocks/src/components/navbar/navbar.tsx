@@ -1,7 +1,24 @@
-import { component$ } from "@builder.io/qwik";
+import { component$, PropFunction } from "@builder.io/qwik";
 import { onToggleMenu } from "../menu";
 
-export default component$(() => {
+interface NavbarProps {
+  continents: string[];
+  selectedContinent: string | null;
+  onSelectContinent: PropFunction<(continent: string) => void>;
+}
+
+const defaultContinents = [
+  "Asia",
+  "Europe",
+  "Africa",
+  "North America",
+  "South America",
+  "Australia",
+  "Antarctica"
+];
+
+export default component$<NavbarProps>(({ selectedContinent, onSelectContinent }) => {
+  const continents = defaultContinents;
   return (
     <nav class="flex justify-between items-center w-[92%] mx-auto">
       <div>
@@ -9,21 +26,17 @@ export default component$(() => {
       </div>
       <div class="nav-links md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 opacity-0 md:opacity-100 invisible md:visible transition-all duration-500 ease-in-out">
         <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-          <li>
-            <a class="hover:text-gray-500" href="#">America</a>
-          </li>
-          <li>
-            <a class="hover:text-gray-500" href="#">Europe</a>
-          </li>
-          <li>
-            <a class="hover:text-gray-500" href="#">Asia</a>
-          </li>
-          <li>
-            <a class="hover:text-gray-500" href="#">Africa</a>
-          </li>
-          <li>
-            <a class="hover:text-gray-500" href="#">Australia</a>
-          </li>
+          {continents.map((continent) => (
+            <li key={continent}>
+              <a
+                class={"hover:text-gray-500 " + (selectedContinent === continent ? "font-bold underline" : "font-medium")}
+                href="#"
+                onClick$={() => onSelectContinent(continent)}
+              >
+                {continent}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
       <div class="flex items-center gap-6">
