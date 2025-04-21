@@ -9,8 +9,8 @@
 
 .clock {
   position: relative;
-  height: 400px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   display: grid;
   place-items: center;
@@ -21,13 +21,13 @@
 
 .clock label {
   position: absolute;
-  inset: 20px;
+  inset: 12px;
   text-align: center;
 }
 
 .clock label span {
   display: inline-block;
-  font-size: 30px;
+  font-size: 15px;
   font-weight: 600;
   color: #18191a;
 }
@@ -59,19 +59,19 @@
 }
 
 .hand.second {
-  height: 130px;
+  height: 65px;
   width: 4px;
   background: #e74c3c;
 }
 
 .hand.minute {
-  height: 120px;
+  height: 60px;
   width: 5px;
   background: #18191a;
 }
 
 .hand.hour {
-  height: 100px;
+  height: 50px;
   width: 8px;
   background: #18191a;
 }
