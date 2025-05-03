@@ -27,7 +27,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "World Clocks built with Qwik",
+      content: "World Clocks",
     },
   ],
 };
