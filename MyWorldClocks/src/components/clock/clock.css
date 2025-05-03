@@ -81,3 +81,11 @@
 .dark .indicator::before { background: #fff; }
 .dark .hand.minute,
 .dark .hand.hour { background: #fff; }
+
+
+/* Custom CSS */
+
+/* custom margin bottom -10px */
+.cmb--10 {
+  margin-bottom: -10px;
+}

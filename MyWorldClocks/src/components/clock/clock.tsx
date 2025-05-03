@@ -69,7 +69,7 @@ export const Clock = component$<ClockProps>(({ id, city, utcOffset }) => {
 
   return (
     <div class="clock-container" ref={containerRef}>
-      <h2 class="text-xl font-semibold">{city}</h2>
+      <h2 class="text-xl font-semibold cmb--10">{city}</h2>
       <div class="clock" id={id}>
         {Array.from({ length: 12 }, (_, i) => (
           <label key={i + 1} style={{ transform: `rotate(${(i + 1) * 30}deg)` }}>
