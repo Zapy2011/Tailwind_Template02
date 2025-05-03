@@ -29,11 +29,11 @@ export default component$<NavbarProps>(({ selectedContinent = "North America", o
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
       .join(' ');
   };
-
-  return (    <nav class="flex justify-between items-center w-[92%] mx-auto">
+  return (    <nav class="flex justify-between items-center w-[92%] mx-auto min-h-[50px]">
       <div>
         <a href="/" onClick$={() => nav('/')} class="cursor-pointer">
-          <img class="w-16" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="logo" />
+          {/* <img class="w-16" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="logo" /> */}
+          <span>World Clocks</span>
         </a>
       </div>
       <div class="nav-links md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 opacity-0 md:opacity-100 invisible md:visible transition-all duration-500 ease-in-out">
