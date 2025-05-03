@@ -74,5 +74,33 @@
 
   { "continent": "Antarctica", "country": "Antarctica", "state": "Ross Dependency", "city": "McMurdo Station", "id": "mcmurdo_station", "utcOffset": 12, "major": true },
   { "continent": "Antarctica", "country": "Antarctica", "state": "Queen Maud Land", "city": "Troll Station", "id": "troll_station", "utcOffset": 2, "major": true },
-  { "continent": "Antarctica", "country": "Antarctica", "state": "Adélie Land", "city": "Dumont d'Urville Station", "id": "dumont_durville_station", "utcOffset": 10, "major": true }
+  { "continent": "Antarctica", "country": "Antarctica", "state": "Adélie Land", "city": "Dumont d'Urville Station", "id": "dumont_durville_station", "utcOffset": 10, "major": true },
+  { "continent": "North America", "country": "USA", "state": "Hawaii", "city": "Honolulu", "id": "honolulu", "utcOffset": -10, "major": true },
+  { "continent": "North America", "country": "Canada", "state": "Quebec", "city": "Montreal", "id": "montreal", "utcOffset": -4, "major": true },
+  { "continent": "North America", "country": "Canada", "state": "Ontario", "city": "Ottawa", "id": "ottawa", "utcOffset": -4, "major": true },  { "continent": "North America", "country": "Mexico", "state": "Mexico City", "city": "Mexico City", "id": "mexico_city", "utcOffset": -5, "major": true },
+
+  { "continent": "South America", "country": "Ecuador", "state": "Pichincha", "city": "Quito", "id": "quito", "utcOffset": -5, "major": true },
+  { "continent": "South America", "country": "Uruguay", "state": "Montevideo", "city": "Montevideo", "id": "montevideo", "utcOffset": -3, "major": true },
+  { "continent": "South America", "country": "Paraguay", "state": "Asunción", "city": "Asunción", "id": "asuncion", "utcOffset": -4, "major": true },
+
+  { "continent": "Europe", "country": "United Kingdom", "state": "Scotland", "city": "Edinburgh", "id": "edinburgh", "utcOffset": 1, "major": true },
+  { "continent": "Europe", "country": "United Kingdom", "state": "England", "city": "Manchester", "id": "manchester", "utcOffset": 1, "major": true },{ "continent": "Europe", "country": "Germany", "state": "Bavaria", "city": "Munich", "id": "munich", "utcOffset": 2, "major": true },
+  { "continent": "Europe", "country": "Italy", "state": "Lombardy", "city": "Milan", "id": "milan", "utcOffset": 2, "major": true },
+  { "continent": "Europe", "country": "Spain", "state": "Catalonia", "city": "Barcelona", "id": "barcelona", "utcOffset": 2, "major": true },  { "continent": "Europe", "country": "Portugal", "state": "Lisbon", "city": "Lisbon", "id": "lisbon", "utcOffset": 1, "major": true },
+  { "continent": "Europe", "country": "Sweden", "state": "Stockholm", "city": "Stockholm", "id": "stockholm", "utcOffset": 2, "major": true },
+  { "continent": "Europe", "country": "Norway", "state": "Oslo", "city": "Oslo", "id": "oslo", "utcOffset": 2, "major": true },
+  { "continent": "Asia", "country": "Japan", "state": "Osaka", "city": "Osaka", "id": "osaka", "utcOffset": 9, "major": true },
+  { "continent": "Asia", "country": "Japan", "state": "Fukuoka", "city": "Fukuoka", "id": "fukuoka", "utcOffset": 9, "major": true },
+  { "continent": "Asia", "country": "China", "state": "Guangdong", "city": "Guangzhou", "id": "guangzhou", "utcOffset": 8, "major": true },
+  { "continent": "Asia", "country": "China", "state": "Sichuan", "city": "Chengdu", "id": "chengdu", "utcOffset": 8, "major": true },
+  { "continent": "Asia", "country": "India", "state": "Tamil Nadu", "city": "Chennai", "id": "chennai", "utcOffset": 5.5, "major": true },  { "continent": "Asia", "country": "India", "state": "West Bengal", "city": "Kolkata", "id": "kolkata", "utcOffset": 5.5, "major": true },
+  { "continent": "Asia", "country": "United Arab Emirates", "state": "Abu Dhabi", "city": "Abu Dhabi", "id": "abu_dhabi", "utcOffset": 4, "major": true },
+  { "continent": "Asia", "country": "Saudi Arabia", "state": "Mecca", "city": "Mecca", "id": "mecca", "utcOffset": 3, "major": true },
+  { "continent": "Africa", "country": "South Africa", "state": "Western Cape", "city": "Cape Town", "id": "cape_town", "utcOffset": 2, "major": true },
+  { "continent": "Africa", "country": "South Africa", "state": "KwaZulu-Natal", "city": "Durban", "id": "durban", "utcOffset": 2, "major": true },
+  { "continent": "Africa", "country": "Tanzania", "state": "Dar es Salaam", "city": "Dar es Salaam", "id": "dar_es_salaam", "utcOffset": 3, "major": true },
+  { "continent": "Africa", "country": "Uganda", "state": "Kampala", "city": "Kampala", "id": "kampala", "utcOffset": 3, "major": true },
+  { "continent": "Africa", "country": "Ghana", "state": "Greater Accra", "city": "Accra", "id": "accra", "utcOffset": 0, "major": true },
+
+  { "continent": "Australia", "country": "New Zealand", "state": "Auckland", "city": "Auckland", "id": "auckland", "utcOffset": 12, "major": true },  { "continent": "Australia", "country": "New Zealand", "state": "Wellington", "city": "Wellington", "id": "wellington", "utcOffset": 12, "major": true }
 ]
