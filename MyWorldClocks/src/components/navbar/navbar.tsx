@@ -1,4 +1,5 @@
 import { component$, PropFunction } from "@builder.io/qwik";
+import { Link, useNavigate } from "@builder.io/qwik-city";
 import { onToggleMenu } from "../menu";
 
 interface NavbarProps {
@@ -18,6 +19,7 @@ const defaultContinents = [
 ];
 
 export default component$<NavbarProps>(({ selectedContinent = "North America", onSelectContinent }) => {
+  const nav = useNavigate();
   const continents = defaultContinents;
   return (
     <nav class="flex justify-between items-center w-[92%] mx-auto">
@@ -28,10 +30,13 @@ export default component$<NavbarProps>(({ selectedContinent = "North America", o
         <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
           {continents.map((continent) => (
             <li key={continent}>
-              <a
-                class={"hover:text-gray-500 " + (selectedContinent === continent ? "font-bold underline" : "font-medium")}
-                href="#"
-                onClick$={() => onSelectContinent(continent)}
+              <a                class={"hover:text-gray-500 " + (selectedContinent === continent ? "font-bold underline" : "font-medium")}
+                href={`/${continent.toLowerCase().replace(' ', '-')}`}
+                preventdefault:click
+                onClick$={() => {
+                  onSelectContinent(continent);
+                  window.history.pushState({}, '', `/${continent.toLowerCase().replace(' ', '-')}`);
+                }}
               >
                 {continent}
               </a>
