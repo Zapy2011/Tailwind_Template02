@@ -12,10 +12,9 @@ interface ClockData {
   utcOffset: number;
 }
 
-export default component$(() => {
-  const { params } = useLocation();
+export default component$(() => {  const { params } = useLocation();
   const { handleSelectContinent, clocks } = useContext(AppContext);
-  const rawContinent = params.continent || 'asia';
+  const rawContinent = params.continent;
   
   // Format the continent name for display (capitalize first letter of each word)
   const formatContinent = (name: string): string => {
@@ -57,7 +56,7 @@ export const head: DocumentHead = ({ params }) => {
       .join(' ');
   };
 
-  const displayContinent = formatContinent(params.continent || 'asia');
+  const displayContinent = formatContinent(params.continent);
 
   return {
     title: `World Clocks - ${displayContinent}`,

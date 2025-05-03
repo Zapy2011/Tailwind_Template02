@@ -38,7 +38,7 @@ export default component$<NavbarProps>(({ selectedContinent = "North America", o
       </div>
       <div class="nav-links md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 opacity-0 md:opacity-100 invisible md:visible transition-all duration-500 ease-in-out">
         <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-          {continents.map((continent) => (            <li key={continent}>              <a                class={"hover:text-gray-500 " + (continent.toLowerCase().replace(' ', '-') === (params.continent || 'asia') ? "font-bold underline" : "font-medium")}
+          {continents.map((continent) => (            <li key={continent}>              <a                class={"hover:text-gray-500 " + (continent.toLowerCase().replace(' ', '-') === params.continent ? "font-bold underline" : "font-medium")}
                 href={`/${continent.toLowerCase().replace(' ', '-')}`}
                 onClick$={() => {
                   onSelectContinent(continent);
