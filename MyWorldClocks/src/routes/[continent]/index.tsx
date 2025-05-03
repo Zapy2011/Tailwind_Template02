@@ -39,8 +39,7 @@ export default component$(() => {
   );
   
   return (
-    <div class="container mx-auto py-8">
-      <h1 class="text-4xl font-bold text-center mb-8">World Clocks - {displayContinent}</h1>
+    <div class="container mx-auto py-8">      
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-8">
         {filteredClocks.map(clock => (
           <Clock key={clock.id} {...clock} />
