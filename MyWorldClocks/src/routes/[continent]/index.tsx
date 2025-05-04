@@ -1,3 +1,4 @@
+export const prerender = true;
 import { component$, useContext, useTask$ } from "@builder.io/qwik";
 import { useLocation, type DocumentHead } from "@builder.io/qwik-city";
 import { AppContext } from '../layout';
