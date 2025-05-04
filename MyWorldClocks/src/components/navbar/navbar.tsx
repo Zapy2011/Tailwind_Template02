@@ -1,10 +1,9 @@
 import { component$, PropFunction } from "@builder.io/qwik";
-import { Link, useNavigate, useLocation } from "@builder.io/qwik-city";
+import { useNavigate, useLocation } from "@builder.io/qwik-city";
 import { onToggleMenu } from "../menu";
 
 interface NavbarProps {
   continents: string[];
-  selectedContinent: string | null;
   onSelectContinent: PropFunction<(continent: string) => void>;
 }
 
@@ -18,17 +17,11 @@ const defaultContinents = [
   "Antarctica"
 ];
 
-export default component$<NavbarProps>(({ selectedContinent = "North America", onSelectContinent }) => {
+export default component$<NavbarProps>(({ onSelectContinent }) => {
   const nav = useNavigate();
   const { params } = useLocation();
   const continents = defaultContinents;
-
-  const formatContinent = (name: string): string => {
-    return name
-      .split('-')
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
-  };
+  // Removed unused formatContinent function
   return (    <nav class="flex justify-between items-center w-[92%] mx-auto min-h-[50px]">
       <div>
         <a href="/" onClick$={() => nav('/')} class="cursor-pointer">

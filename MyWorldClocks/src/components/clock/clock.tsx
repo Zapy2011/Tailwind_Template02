@@ -33,7 +33,7 @@ export const Clock = component$<ClockProps>(({ id, city, utcOffset }) => {
       lastFrameTime = currentTime;
 
       const now = new Date();
-      console.log('id = ' + id + ' utcOffset = ' + utcOffset);
+      
       const utcTime = new Date(now.getTime() + utcOffset * 60 * 60 * 1000);
 
       const seconds = utcTime.getUTCSeconds();

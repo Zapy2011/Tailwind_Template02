@@ -1,7 +1,6 @@
 import { component$, Slot, useSignal, useContextProvider, createContextId, $ } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
 import clocksData from '~/data/clocks.json';
-import { ClockData } from '~/model/clock-data';
 import NavBar from "~/components/navbar/navbar";
 
 export const AppContext = createContextId<any>('AppContext');
@@ -34,7 +33,6 @@ export default component$(() => {
       <header class="bg-white">
         <NavBar 
           continents={continents} 
-          selectedContinent={selectedContinent.value} 
           onSelectContinent={handleSelectContinent} 
         />
       </header>

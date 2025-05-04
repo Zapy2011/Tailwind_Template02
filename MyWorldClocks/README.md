@@ -130,3 +130,9 @@ To add new cities, modify the `src/data/clocks.json` file. Each city entry shoul
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details
+
+## Static Site Generator (Node.js)
+
+```shell
+pnpm build.server
+```
