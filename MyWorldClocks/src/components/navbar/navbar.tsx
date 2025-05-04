@@ -32,7 +32,10 @@ export default component$<NavbarProps>(({ onSelectContinent }) => {
               <a
                 class="hover:text-gray-500 font-medium cursor-pointer"
                 href={`#${continent.toLowerCase().replace(' ', '-')}`}
-                onClick$={() => onSelectContinent(continent)}
+                onClick$={() => {
+                  onSelectContinent(continent);
+                  onToggleMenu();
+                }}
               >
                 {continent}
               </a>
