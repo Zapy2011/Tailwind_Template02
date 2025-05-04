@@ -10,13 +10,13 @@ export const RouterHead = component$(() => {
 
   return (
     <>
-      <title>{head.title || "World Clocks – Global Time Zones by Continent"}</title>
+      <title>World Clocks – Global Time Zones by Continent</title>
       <link rel="canonical" href={loc.url.href} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
       {/* SEO Meta Tags */}
-      <meta name="description" content="World Clocks is a modern web app to view current times in major cities across all continents. Instantly check time zones for Asia, Europe, Africa, North America, South America, Australia, and Antarctica." />
+      <meta name="description" content="View current times in major cities by continent. Instantly check world time zones. Fast, responsive, and easy to use." />
       <meta name="keywords" content="world clocks, time zones, global time, city clocks, continent clocks, qwik, tailwind, major cities, current time" />
       <meta name="author" content="Your Name or Organization" />
 
