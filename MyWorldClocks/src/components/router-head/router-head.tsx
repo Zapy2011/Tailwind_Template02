@@ -34,8 +34,9 @@ export const RouterHead = component$(() => {
       <meta name="twitter:image" content="/world-clock.png" />
 
       {/* Structured Data (JSON-LD) */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={JSON.stringify({
           "@context": "https://schema.org",
           "@type": "WebApplication",
           "name": "World Clocks",
@@ -44,8 +45,8 @@ export const RouterHead = component$(() => {
           "operatingSystem": "All",
           "url": loc.url.href,
           "image": "/world-clock.png"
-        })
-      }} />
+        })}
+      />
 
       {head.meta.map((m) => (
         <meta key={m.key} {...m} />
