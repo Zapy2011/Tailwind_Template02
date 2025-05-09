@@ -16,12 +16,22 @@ const defaultContinents = [
   "Antarctica"
 ];
 
+import { useSignal } from "@builder.io/qwik";
+
 export default component$<NavbarProps>(({ onSelectContinent }) => {
   const continents = defaultContinents;
+  const selected = useSignal<string>("");
   return (
     <nav class="flex justify-between items-center w-[92%] mx-auto min-h-[50px]">
       <div>
-        <a href="#" onClick$={() => onSelectContinent("")} class="cursor-pointer">
+        <a
+          href="#"
+          onClick$={() => {
+            selected.value = "";
+            onSelectContinent("");
+          }}
+          class="cursor-pointer"
+        >
           <span>World Clocks</span>
         </a>
       </div>
@@ -30,9 +40,13 @@ export default component$<NavbarProps>(({ onSelectContinent }) => {
           {continents.map((continent) => (
             <li key={continent}>
               <a
-                class="hover:text-gray-500 font-medium cursor-pointer"
+                class={[
+                  "hover:text-gray-500 font-medium cursor-pointer",
+                  selected.value === continent ? "underline underline-offset-4" : ""
+                ].join(" ")}
                 href={`#${continent.toLowerCase().replace(' ', '-')}`}
                 onClick$={() => {
+                  selected.value = continent;
                   onSelectContinent(continent);
                   onToggleMenu();
                 }}
